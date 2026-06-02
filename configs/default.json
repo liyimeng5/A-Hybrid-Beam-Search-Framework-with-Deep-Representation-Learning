@@ -1,0 +1,19 @@
+{
+  "beam_width": 15,
+  "window_size": 20,
+  "stride": 40,
+  "max_iterations": 600,
+  "transformer": {
+    "d_model": 32,
+    "nhead": 2,
+    "num_layers": 1,
+    "dim_feedforward": 64,
+    "dropout": 0.05
+  },
+  "training": {
+    "epochs": 8,
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "margin": 0.5
+  }
+}
