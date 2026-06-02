@@ -1,0 +1,36 @@
+{
+  "experiment": "parameter_sensitivity_analysis",
+  "description": "Sensitivity analysis for beam width and sliding-window size.",
+  "random_seed": 42,
+
+  "dataset": {
+    "sequence_length": 350,
+    "number_of_sequences": 50,
+    "number_of_groups": 5,
+    "file_pattern": "random固定数量50×{sequence_length}_group{group_id}.fasta"
+  },
+
+  "parameter_grid": {
+    "beam_width": [10, 15, 20, 30],
+    "window_size": [10, 15, 20, 25, 30]
+  },
+
+  "training": {
+    "stride": 40,
+    "epochs": 8,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "margin": 0.5
+  },
+
+  "search": {
+    "max_iterations": 600,
+    "scoring": "rank_based_multidimensional_score"
+  },
+
+  "output": {
+    "output_directory": "results_350_sensitivity",
+    "summary_file": "summary_350.csv",
+    "metrics": ["mlcs_length", "total_time"]
+  }
+}
