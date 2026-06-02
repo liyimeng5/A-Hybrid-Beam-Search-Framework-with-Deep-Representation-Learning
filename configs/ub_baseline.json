@@ -1,0 +1,23 @@
+{
+  "method": "upper_bound_only_baseline",
+  "description": "Configuration for the upper-bound-only baseline used in the ablation experiment.",
+  "random_seed": 42,
+
+  "search": {
+    "beam_width": 15,
+    "max_iterations": 600,
+    "alphabet": ["A", "C", "G", "T"],
+    "use_non_dominated_filtering": true,
+    "use_suffix_upper_bound": true,
+    "use_structural_lower_bound": false,
+    "use_representation_priority": false,
+    "extension_order": "alphabetical"
+  },
+
+  "output": {
+    "save_mlcs_length": true,
+    "save_runtime": true,
+    "save_upper_bound": true,
+    "result_format": "txt"
+  }
+}
