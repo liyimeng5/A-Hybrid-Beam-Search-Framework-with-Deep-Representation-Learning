@@ -13,13 +13,26 @@ The analysis workflow consists of the following stages:
    - **Dual-bound Evaluation**: Assessing candidate paths using an improved heuristic upper bound (theoretical potential) and a structural lower bound (alignment compactness).
    - **Multi-dimensional Scoring and Pruning**: Integrating representation-based priority with dual-bound information to retain Top-K high-potential paths.
 
-## Requirements
+## Source code
 
-* **Python Environment**: Python 3.8 or higher is recommended.
-* **Core Packages**:
-  - `PyTorch`: For Transformer model training and inference.
-  - `NumPy`: For numerical computations and matrix operations.
-  - `Biopython`: For efficient processing of FASTA-formatted biological sequences.
+The source code is provided in the `code/` directory.
+
+- `code/representation_guided_mlcs_search.py`: implementation of the proposed representation-guided hybrid beam search framework for the MLCS problem. This script includes Transformer-based sequence-fragment representation learning, embedding precomputation, non-dominated filtering, dual-bound evaluation, multidimensional scoring, and beam pruning.
+- `code/upper_bound_baseline_search.py`: implementation of the upper-bound-only baseline used for ablation comparison.
+- `code/parameter_sensitivity.py`: script for the parameter sensitivity analysis of beam width and sliding-window size.
+
+The scripts are provided to support editorial and peer review of the manuscript and to facilitate reproducibility of the reported experiments.
+
+## Configuration files
+
+The `configs/` directory provides structured experimental settings corresponding to the main method, baseline comparison, sensitivity analysis, and dataset construction.
+
+- `configs/default.json`: default configuration for the proposed representation-guided hybrid beam search framework.
+- `configs/ub_baseline.json`: configuration for the upper-bound-only baseline.
+- `configs/sensitivity.json`: parameter grid for beam width and sliding-window size sensitivity analysis.
+- `configs/dataset_settings.json`: dataset construction settings for simulated and real biological experiments.
+
+These configuration files are provided to make the experimental settings transparent and easier to reproduce.
 
 ## Dataset Description
 
@@ -124,20 +137,9 @@ In the repository, the varying-sequence-number FASTA files are stored under `rea
 Note: The files in `real-data/length/` and `real-data/number/` contain experimental FASTA subsets/fragments generated from the NCBI records listed above. The ordering of accessions in this table follows the ordering used to construct the nested benchmark subsets.
 
 
-## How to Perform MLCS Analysis
+## Output
 
-### 1. Prepare Input Data
-Prepare your sequence files in FASTA format. We recommend following the structure in the `data/` directory, where each experimental configuration includes 5 independent test groups (`group1` to `group5`) to ensure statistical reliability.
-
-### 2. Execute the Analysis
-Use the main script `main.py` to start the search process.
-* **Key Parameter Descriptions**:
-  - `--beam_width` (K): Search beam width. The recommended default is 15 to balance precision and efficiency.
-  - `--window_size` (W): Transformer sliding window size. The recommended default is 10.
-  - `--step_size` (S): Sampling step size for training. The recommended default is 40.
-
-### 3. Output
-The algorithm maintains the `Best_MLCS` in real-time and outputs the final longest common subsequence and its length upon completion.
+The scripts output the MLCS length, the corresponding common subsequence, upper-bound information, and runtime statistics. For repeated experiments, the average MLCS length and average runtime are reported across independent groups.
 
 
 ## References
