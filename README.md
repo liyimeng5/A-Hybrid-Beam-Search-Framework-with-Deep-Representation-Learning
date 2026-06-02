@@ -43,85 +43,86 @@ The real-data benchmark files were generated in a nested manner. For the varying
 
 In the repository, the varying-sequence-number FASTA files are stored under `real-data/length/` as `1000×N_group1.fasta`, and the varying-sequence-length FASTA files are stored under `real-data/number/` as `50×L_group1.fasta`.
 
-| No. | Accession ID  | Original source          | NCBI record                                                     | Used in generated real-data FASTA subsets                                  |
-| --: | ------------- | ------------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
-|   1 | `NC_100129.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_100129.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   2 | `NC_105760.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105760.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   3 | `NC_129902.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_129902.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   4 | `NC_135733.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135733.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   5 | `NC_104808.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_104808.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   6 | `NC_105100.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105100.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   7 | `NC_105104.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105104.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   8 | `NC_105513.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105513.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|   9 | `NC_130051.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_130051.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  10 | `NC_094493.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_094493.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  11 | `NC_095802.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_095802.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  12 | `NC_101838.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_101838.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  13 | `NC_101842.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_101842.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  14 | `NC_104726.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_104726.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  15 | `NC_105101.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105101.1) | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
-|  16 | `NC_105137.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105137.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  17 | `NC_111505.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_111505.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  18 | `NC_129898.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_129898.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  19 | `NC_135729.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135729.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  20 | `NC_135730.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135730.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  21 | `NC_135731.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135731.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  22 | `NC_135732.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135732.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  23 | `NC_100327.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_100327.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  24 | `NC_100371.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_100371.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  25 | `NC_100372.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_100372.1) | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
-|  26 | `NC_101835.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_101835.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  27 | `NC_101837.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_101837.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  28 | `NC_102531.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_102531.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  29 | `NC_103192.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_103192.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  30 | `NC_105135.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105135.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  31 | `NC_105136.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105136.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  32 | `NC_105138.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105138.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  33 | `NC_105143.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_105143.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  34 | `NC_135728.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135728.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  35 | `NC_100200.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_100200.1) | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
-|  36 | `NC_116488.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_116488.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  37 | `NC_131255.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_131255.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  38 | `NC_135675.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135675.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  39 | `NC_135676.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135676.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  40 | `NC_135677.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135677.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  41 | `NC_135678.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135678.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  42 | `NC_135679.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135679.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  43 | `NC_135680.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135680.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  44 | `NC_135681.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135681.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  45 | `NC_135682.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135682.1) | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
-|  46 | `NC_135683.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135683.1) | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
-|  47 | `NC_135684.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135684.1) | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
-|  48 | `NC_135685.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135685.1) | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
-|  49 | `NC_135686.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135686.1) | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
-|  50 | `NC_135687.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135687.1) | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
-|  51 | `NC_115607.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_115607.1) | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
-|  52 | `NC_115650.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_115650.1) | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
-|  53 | `NC_131242.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_131242.1) | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
-|  54 | `NC_135651.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135651.1) | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
-|  55 | `NC_135652.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135652.1) | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
-|  56 | `NC_135653.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135653.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  57 | `NC_135654.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135654.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  58 | `NC_135600.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135600.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  59 | `NC_135601.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135601.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  60 | `NC_135602.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135602.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  61 | `NC_135603.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135603.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  62 | `NC_135604.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135604.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  63 | `NC_135605.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135605.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  64 | `NC_135606.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135606.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  65 | `NC_135607.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135607.1) | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
-|  66 | `NC_135608.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135608.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  67 | `NC_135609.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135609.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  68 | `NC_135610.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_135610.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  69 | `NC_106230.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_106230.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  70 | `NC_106231.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_106231.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  71 | `NC_106232.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_106232.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  72 | `NC_106233.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_106233.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  73 | `NC_107026.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_107026.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  74 | `NC_109869.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_109869.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
-|  75 | `NC_111749.1` | NCBI Nucleotide / RefSeq | [NCBI record](https://www.ncbi.nlm.nih.gov/nuccore/NC_111749.1) | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+| No. | Accession ID  | Original source          | NCBI link                                        | Used in generated real-data FASTA subsets                                  |
+| --: | ------------- | ------------------------ | ------------------------------------------------ | -------------------------------------------------------------------------- |
+|   1 | `NC_100129.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_100129.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   2 | `NC_105760.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105760.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   3 | `NC_129902.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_129902.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   4 | `NC_135733.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135733.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   5 | `NC_104808.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_104808.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   6 | `NC_105100.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105100.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   7 | `NC_105104.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105104.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   8 | `NC_105513.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105513.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|   9 | `NC_130051.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_130051.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  10 | `NC_094493.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_094493.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  11 | `NC_095802.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_095802.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  12 | `NC_101838.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_101838.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  13 | `NC_101842.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_101842.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  14 | `NC_104726.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_104726.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  15 | `NC_105101.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105101.1 | Included in `1000×N` subsets with `N ≥ 15`; included in all `50×L` subsets |
+|  16 | `NC_105137.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105137.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  17 | `NC_111505.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_111505.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  18 | `NC_129898.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_129898.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  19 | `NC_135729.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135729.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  20 | `NC_135730.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135730.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  21 | `NC_135731.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135731.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  22 | `NC_135732.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135732.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  23 | `NC_100327.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_100327.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  24 | `NC_100371.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_100371.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  25 | `NC_100372.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_100372.1 | Included in `1000×N` subsets with `N ≥ 25`; included in all `50×L` subsets |
+|  26 | `NC_101835.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_101835.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  27 | `NC_101837.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_101837.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  28 | `NC_102531.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_102531.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  29 | `NC_103192.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_103192.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  30 | `NC_105135.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105135.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  31 | `NC_105136.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105136.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  32 | `NC_105138.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105138.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  33 | `NC_105143.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_105143.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  34 | `NC_135728.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135728.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  35 | `NC_100200.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_100200.1 | Included in `1000×N` subsets with `N ≥ 35`; included in all `50×L` subsets |
+|  36 | `NC_116488.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_116488.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  37 | `NC_131255.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_131255.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  38 | `NC_135675.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135675.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  39 | `NC_135676.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135676.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  40 | `NC_135677.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135677.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  41 | `NC_135678.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135678.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  42 | `NC_135679.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135679.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  43 | `NC_135680.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135680.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  44 | `NC_135681.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135681.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  45 | `NC_135682.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135682.1 | Included in `1000×N` subsets with `N ≥ 45`; included in all `50×L` subsets |
+|  46 | `NC_135683.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135683.1 | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
+|  47 | `NC_135684.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135684.1 | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
+|  48 | `NC_135685.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135685.1 | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
+|  49 | `NC_135686.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135686.1 | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
+|  50 | `NC_135687.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135687.1 | Included in `1000×N` subsets with `N ≥ 55`; included in all `50×L` subsets |
+|  51 | `NC_115607.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_115607.1 | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
+|  52 | `NC_115650.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_115650.1 | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
+|  53 | `NC_131242.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_131242.1 | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
+|  54 | `NC_135651.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135651.1 | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
+|  55 | `NC_135652.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135652.1 | Included in `1000×N` subsets with `N ≥ 55`; not included in `50×L` subsets |
+|  56 | `NC_135653.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135653.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  57 | `NC_135654.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135654.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  58 | `NC_135600.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135600.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  59 | `NC_135601.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135601.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  60 | `NC_135602.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135602.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  61 | `NC_135603.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135603.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  62 | `NC_135604.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135604.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  63 | `NC_135605.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135605.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  64 | `NC_135606.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135606.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  65 | `NC_135607.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135607.1 | Included in `1000×N` subsets with `N ≥ 65`; not included in `50×L` subsets |
+|  66 | `NC_135608.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135608.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  67 | `NC_135609.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135609.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  68 | `NC_135610.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_135610.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  69 | `NC_106230.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_106230.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  70 | `NC_106231.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_106231.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  71 | `NC_106232.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_106232.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  72 | `NC_106233.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_106233.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  73 | `NC_107026.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_107026.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  74 | `NC_109869.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_109869.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
+|  75 | `NC_111749.1` | NCBI Nucleotide / RefSeq | https://www.ncbi.nlm.nih.gov/nuccore/NC_111749.1 | Included only in the `1000×75` subset; not included in `50×L` subsets      |
 
 Note: The files in `real-data/length/` and `real-data/number/` contain experimental FASTA subsets/fragments generated from the NCBI records listed above. The ordering of accessions in this table follows the ordering used to construct the nested benchmark subsets.
+
 
 ## How to Perform MLCS Analysis
 
