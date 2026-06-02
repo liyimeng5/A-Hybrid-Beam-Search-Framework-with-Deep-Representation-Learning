@@ -1,0 +1,35 @@
+{
+  "simulated_datasets": {
+    "description": "Random nucleotide sequence datasets generated under controlled sequence-length and sequence-number settings.",
+    "alphabet": ["A", "C", "G", "T"],
+    "generation_probability": "uniform",
+    "length_variation_experiment": {
+      "number_of_sequences": 50,
+      "sequence_lengths": [300, 400, 500, 600, 700, 800],
+      "number_of_groups": 5
+    },
+    "sequence_number_variation_experiment": {
+      "sequence_length": 1000,
+      "numbers_of_sequences": [15, 25, 35, 45, 55, 65, 75],
+      "number_of_groups": 5
+    }
+  },
+
+  "real_biological_datasets": {
+    "description": "Benchmark datasets constructed from publicly available complete bacteriophage genome sequences in the NCBI Nucleotide database.",
+    "source_database": "NCBI Nucleotide",
+    "sequence_type": "complete bacteriophage genome sequences",
+    "fragment_construction": "Fragments of required lengths were sequentially truncated from the beginning of the corresponding complete genome sequences.",
+    "accession_information": "The original NCBI accession numbers and source links are listed in the Original data sources section of the GitHub README file.",
+    "length_variation_experiment": {
+      "number_of_sequences": 50,
+      "sequence_lengths": [300, 400, 500, 600, 700, 800],
+      "number_of_groups": 5
+    },
+    "sequence_number_variation_experiment": {
+      "sequence_length": 1000,
+      "numbers_of_sequences": [15, 25, 35, 45, 55, 65, 75],
+      "number_of_groups": 5
+    }
+  }
+}
