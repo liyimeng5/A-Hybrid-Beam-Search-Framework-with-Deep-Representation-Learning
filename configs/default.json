@@ -1,19 +1,54 @@
 {
-  "beam_width": 15,
-  "window_size": 20,
-  "stride": 40,
-  "max_iterations": 600,
-  "transformer": {
+  "method": "representation_guided_hybrid_beam_search",
+  "description": "Default configuration for the proposed representation-guided MLCS search framework.",
+  "random_seed": 42,
+  "device": "cuda_if_available",
+
+  "model": {
+    "architecture": "lightweight_transformer_encoder",
+    "vocab": ["A", "C", "G", "T", "N"],
     "d_model": 32,
-    "nhead": 2,
+    "num_heads": 2,
     "num_layers": 1,
     "dim_feedforward": 64,
-    "dropout": 0.05
+    "dropout": 0.05,
+    "max_seq_len": 1000,
+    "embedding_dim": 32
   },
-  "training": {
+
+  "contrastive_learning": {
+    "window_size": 20,
+    "stride": 40,
     "epochs": 8,
-    "learning_rate": 0.001,
     "batch_size": 256,
-    "margin": 0.5
+    "learning_rate": 0.001,
+    "margin": 0.5,
+    "regularization_weight": 0.01,
+    "distance_metric": "manhattan"
+  },
+
+  "search": {
+    "beam_width": 15,
+    "max_iterations": 600,
+    "alphabet": ["A", "C", "G", "T"],
+    "use_non_dominated_filtering": true,
+    "use_suffix_upper_bound": true,
+    "use_structural_lower_bound": true,
+    "use_representation_priority": true,
+    "top_k_priority": 10
+  },
+
+  "scoring": {
+    "upper_bound_weight": 0.4,
+    "lower_bound_weight": 0.4,
+    "representation_priority_weight": 0.2,
+    "normalization": "rank_based"
+  },
+
+  "output": {
+    "save_mlcs_sequence": true,
+    "save_runtime": true,
+    "save_upper_bound": true,
+    "result_format": "txt"
   }
 }
